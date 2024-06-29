@@ -2,9 +2,9 @@ import requests
 from twilio.rest import Client
 
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = "-------------------"
-account_sid = "---------"
-auth_token = "------"
+api_key = "--key--"
+account_sid = "--sid-id--"
+auth_token = "--auth-token--"
 
 weather_params = {
     "lat": 19.075983,
@@ -26,8 +26,8 @@ for hour_data in weather_data["list"]:
 if will_rain:
     client = Client(account_sid, auth_token)
     message = client.messages.create(
-        from_='whatsapp:+--------------',
+        from_='whatsapp:+--sandbox_number--',
         body="Remember to bring an umbrella☔, It's going to be rain today",
-        to='whatsapp:+91----------',
+        to='whatsapp:+91--ur_number--',
     )
     print(message.status)
