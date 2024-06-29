@@ -11,6 +11,7 @@
 
 - **Weather Condition Check:**
   - Implemented a check within the script to iterate through forecasted weather data (`weather_data["list"]`) and determine if any condition codes (`"weather"[0]["id"]`) indicate potential rain (conditions with code < 700).
+  - Here you can find out why i used > 700 for weather code ('https://openweathermap.org/weather-conditions')
 
 - **Twilio Integration:**
   - Utilized Twilio's REST API (`twilio.rest.Client`) to facilitate sending WhatsApp messages (`client.messages.create`) to notify users about impending rain conditions.
