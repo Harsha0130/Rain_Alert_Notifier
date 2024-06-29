@@ -1,11 +1,14 @@
 import requests
+from twilio.rest import Client
 
 OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
-api_key = "7a941c35c1609e319e27bd456ccf9cf0"
+api_key = "-------------------"
+account_sid = "---------"
+auth_token = "------"
 
 weather_params = {
-    "lat": 12.971599,
-    "lon": 77.594566,
+    "lat": 19.075983,
+    "lon": 72.877655,
     "appid": api_key,
     "cnt": 4
 }
@@ -17,11 +20,14 @@ weather_data = response.json()
 will_rain = False
 for hour_data in weather_data["list"]:
     condition_code = hour_data["weather"][0]["id"]
-    print(condition_code)
-
     if int(condition_code) < 700:
         will_rain = True
 
 if will_rain:
-    print("Carry Umbrella")
-
+    client = Client(account_sid, auth_token)
+    message = client.messages.create(
+        from_='whatsapp:+--------------',
+        body="Remember to bring an umbrella☔, It's going to be rain today",
+        to='whatsapp:+91----------',
+    )
+    print(message.status)
