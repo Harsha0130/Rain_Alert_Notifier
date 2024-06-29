@@ -21,7 +21,7 @@
 - **Prerequisites:**
   - Listed the necessary prerequisites such as Python installation and required Python libraries (`requests`, `twilio`).
 
-###Replace placeholders in the script:
+### Replace placeholders in the script:
 
 - Replace `--key--` with your OpenWeatherMap API key.
 - Replace `--sid-id--` with your Twilio Account SID.
@@ -30,7 +30,7 @@
 - Replace `--ur_number--` with your WhatsApp number.
 
 
-###Screenshot
+### Screenshot
 
 ![WhatsApp Image 2024-06-29 at 19 48 27_69934f14](https://github.com/Harsha0130/Rain_Alert_Notifier/assets/127675058/b404a134-158f-409c-ace4-6825c4e35547)
 
