@@ -31,9 +31,9 @@
 - Replace `--ur_number--` with your WhatsApp number.
 
 
-### Screenshot
+### Video
 
-![WhatsApp Image 2024-06-29 at 19 48 27_69934f14](https://github.com/Harsha0130/Rain_Alert_Notifier/assets/127675058/b404a134-158f-409c-ace4-6825c4e35547)
 
+https://github.com/user-attachments/assets/c0866928-bd0f-431b-8bae-e726810a2b22
 
 
